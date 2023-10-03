@@ -1,38 +1,51 @@
-## SQLite Lab
-
-### Lab:
-
-* Use an AI Assistant, but use a different one then you used from a previous lab (Anthropic's Claud, Bard, Copilot, CodeWhisperer, Colab AI, etc)
-* ETL-Query:  [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query
-For the ETL-Query lab:
-* [E] Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats tend to work well.
-* [T] Transform the data by cleaning, filtering, enriching, etc to get it ready for analysis.
-* [L] Load the transformed data into a SQLite database table using Python's sqlite3 module.
-* [Q] Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
-
-#### Tasks:
-
-* Fork this project and get it to run
-* Make the query more useful and not a giant mess that prints to screen
-* Convert the main.py into a command-line tool that lets you run each step independantly
-* Fork this project and do the same thing for a new dataset you choose
-* Make sure your project passes lint/tests and has a built badge
-* Include an architectural diagram showing how the project works
-
-#### Reflection Questions
-
-* What challenges did you face when extracting, transforming, and loading the data? How did you overcome them?
-* What insights or new knowledge did you gain from querying the SQLite database?
-* How can SQLite and SQL help make data analysis more efficient? What are the limitations?
-* What AI assistant did you use and how did it compare to others you've tried? What are its strengths and weaknesses?
-* If you could enhance this lab, what would you add or change? What other data would be interesting to load and query?
-
-##### Challenge Exercises
-
-* Add more transformations to the data before loading it into SQLite. Ideas: join with another dataset, aggregate by categories, normalize columns.
-* Write a query to find correlated fields in the data. Print the query results nicely formatted.
-* Create a second table in the SQLite database and write a join query with the two tables.
-* Build a simple Flask web app that runs queries on demand and displays results.
-* Containerize the application using Docker so the database and queries can be portable
+# IDS_706-Data_Engineering_Systems
+## Mini-Project 5 : Python Script interacting with SQL Database
 
 
+
+***
+
+#### Purpose
+This repo is for Mini-Project 5 of the Data Engineering course.
+
+***
+
+#### This template includes:
+1. **.devcontainer**: configuration folder which contains a **Dockerfile** and **devcontainer.json**.
+   - **Dockerfile**: specifies the instructions for building a Docker container image that will be used as the development environment.
+   - **devcontainer.json**: defines the settings for the development container, such as which Dockerfile to use and environment variables.
+3. **Makefile**: contains a set of rules that define how to compile source code, run tests, and perform other development tasks. 
+4. **requirements.txt**: lists all the external libraries and dependencies required for the project to run correctly. It helps ensure that everyone working on the project uses the same versions of libraries, which is important for reproducibility and compatibility.
+5. **workflows**: contains configuration file **(cicd.yml)** for matrix build that tests more than one version of Python.
+6. **main.py**: contains a basic function which displays system info.
+7. **test_main.py**: python file to test the function in main.
+8. **README**: gives developers a detailed description of the GitHub project.
+9. **.gitignore**: specifies files and directories that should be ignored by Git, the version control system used by GitHub. Changes in files or directories in the .gitignore file will not be tracked by Git, and they will not be included in the version history.
+
+***
+
+### Commands to Run the Repo
+
+To run the project, you can use the Makefile and follow these commands:
+1. ```
+   # To install the required the python packages
+   make install
+   ```
+2. ```
+   # To check code style
+   make lint
+   ```
+3. ```
+   # To run tests
+   make test
+   ```
+4. ```
+   # To format the code
+   make format
+   ```
+5. ```
+   # To perform all the above tasks (install, test, format, lint)
+   make all
+   ```
+
+***
