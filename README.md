@@ -24,7 +24,7 @@ Query (Q): Writes and executes SQL queries on the SQLite database to analyze and
 
 The template given by Professor Noah was used in this project. It was modified by replacing the original dataset (food market) with a dataset related to ice-cream flavours sold by Baskin Robbins. This dataset was extracted into a local CSV file. It was cleaned and transformed, and then loaded into a .db file. SQL queries were then executed to analyze the data. This repo also includes functions for data extraction, transformation and data loading. It also includes a a function which Implements an SQL log to record all actions performed during queries.
 
-Dataset: Baskin Robbins Ice-Cream [https://raw.githubusercontent.com/prasertcbs/basic-dataset/master/baskin_icecream.csv]
+Dataset: [Baskin Robbins Ice-Cream](https://raw.githubusercontent.com/prasertcbs/basic-dataset/master/baskin_icecream.csv)
 
 ***
 
