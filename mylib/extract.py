@@ -9,7 +9,8 @@ import requests
 
 def extract(
     url="""
-    https://raw.githubusercontent.com/prasertcbs/basic-dataset/master/baskin_icecream.csv
+    https://raw.githubusercontent.com/prasertcbs/basic-dataset/master
+    /baskin_icecream.csv
     """,
     file_path="data/baskin_icecream.csv",
     directory="data",
