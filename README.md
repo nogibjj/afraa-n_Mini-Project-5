@@ -6,7 +6,25 @@
 ***
 
 #### Purpose
-This repo is for Mini-Project 5 of the Data Engineering course.
+
+This project is for a data engineering course (Mini-Project 5). It involves the use of a Python script to interact with an SQL database. The project also implements continuous integration through GitHub Actions to automate the setup of the environment, perform testing, code formatting, and code linting.
+
+***
+
+#### ETL-Query Operations
+
+Extract (E): Retrieves a dataset in CSV format from a specified URL.
+Transform (T): Cleans, filters, and enriches the extracted data, preparing it for analysis.
+Load (L): Loads the transformed data into a SQLite Database table using Python's sqlite3 module.
+Query (Q): Writes and executes SQL queries on the SQLite database to analyze and extract insights from the data.
+
+****
+
+#### Process
+
+The template given by Professor Noah was used in this project. It was modified by replacing the original dataset (food market) with a dataset related to ice-cream flavours sold by Baskin Robbins. This dataset was extracted into a local CSV file. It was cleaned and transformed, and then loaded into a .db file. SQL queries were then executed to analyze the data. This repo also includes functions for data extraction, transformation and data loading. It also includes a a function which Implements an SQL log to record all actions performed during queries.
+
+Dataset: Baskin Robbins Ice-Cream [].
 
 ***
 
