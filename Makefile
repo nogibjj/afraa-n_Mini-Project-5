@@ -46,4 +46,4 @@ transform_load:
 	python main.py transform_load
 
 query:
-	python main.py general_query "SELECT * FROM baskin_icecream WHERE Flavour='Green Tea';"
+	python main.py run_query "SELECT * FROM baskin_icecream WHERE Flavour='Green Tea';"
