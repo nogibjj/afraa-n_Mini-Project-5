@@ -26,14 +26,21 @@ def run_query(query):
         or query.strip().lower().startswith("delete")
     ):
         conn.commit()
-    
+
     cursor.close()
     conn.close()
     log(f"{query}")
 
 
 def create(
-    Flavour, Calories, Total_Fat_g, Trans_Fat_g, Carbohydrates_g, Sugars_g, Protein_g, Size,
+    Flavour,
+    Calories,
+    Total_Fat_g,
+    Trans_Fat_g,
+    Carbohydrates_g,
+    Sugars_g,
+    Protein_g,
+    Size,
 ):
     """sample query"""
     conn = sqlite3.connect("baskin_icecream.db")
@@ -45,13 +52,13 @@ def create(
         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
-            Flavour, 
-            Calories, 
-            Total_Fat_g, 
-            Trans_Fat_g, 
-            Carbohydrates_g, 
-            Sugars_g, 
-            Protein_g, 
+            Flavour,
+            Calories,
+            Total_Fat_g,
+            Trans_Fat_g,
+            Carbohydrates_g,
+            Sugars_g,
+            Protein_g,
             Size,
         ),
     )
@@ -74,13 +81,13 @@ def create(
 
 def update(
     record_id,
-    Flavour, 
-    Calories, 
-    Total_Fat_g, 
-    Trans_Fat_g, 
-    Carbohydrates_g, 
-    Sugars_g, 
-    Protein_g, 
+    Flavour,
+    Calories,
+    Total_Fat_g,
+    Trans_Fat_g,
+    Carbohydrates_g,
+    Sugars_g,
+    Protein_g,
     Size,
 ):
     """sample query"""
@@ -100,13 +107,13 @@ def update(
         WHERE id=?
         """,
         (
-            Flavour, 
-            Calories, 
-            Total_Fat_g, 
-            Trans_Fat_g, 
-            Carbohydrates_g, 
-            Sugars_g, 
-            Protein_g, 
+            Flavour,
+            Calories,
+            Total_Fat_g,
+            Trans_Fat_g,
+            Carbohydrates_g,
+            Sugars_g,
+            Protein_g,
             Size,
             record_id,
         ),
