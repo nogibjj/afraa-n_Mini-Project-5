@@ -1,7 +1,8 @@
 """
-Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats tend to work well
+Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats
+tend to work well
 
-baskin icecream dataset
+'baskin icecream dataset'
 """
 import os
 import requests
@@ -9,8 +10,7 @@ import requests
 
 def extract(
     url="""
-    https://raw.githubusercontent.com/prasertcbs/basic-dataset/master
-    /baskin_icecream.csv
+    https://raw.githubusercontent.com/prasertcbs/basic-dataset/master/baskin_icecream.csv
     """,
     file_path="data/baskin_icecream.csv",
     directory="data",
