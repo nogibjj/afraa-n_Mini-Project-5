@@ -95,7 +95,7 @@ def test_run_query():
             "python",
             "main.py",
             "run_query",
-            "SELECT * FROM baskin_icecream WHERE name = 'Butterscotch'",
+            "SELECT * FROM baskin_icecream WHERE Flavour = 'Butterscotch'",
         ],
         capture_output=True,
         text=True,
