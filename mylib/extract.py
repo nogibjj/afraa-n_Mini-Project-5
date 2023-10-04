@@ -1,7 +1,7 @@
 """
 Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats tend to work well
 
-food dataset
+baskin icecream dataset
 """
 import os
 import requests

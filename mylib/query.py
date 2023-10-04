@@ -88,7 +88,7 @@ def update(
     c = conn.cursor()
     c.execute(
         """
-        UPDATE Goose 
+        UPDATE baskin_icecream 
         SET Flavour =?,
         Calories=?,
         Total_Fat_g=?,
