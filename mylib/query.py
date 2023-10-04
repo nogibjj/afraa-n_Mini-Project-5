@@ -141,7 +141,7 @@ def delete(record_id):
     log(f"DELETE FROM baskin_icecream WHERE id={record_id};")
 
 
-def read_data():
+def read():
     """read data"""
     conn = sqlite3.connect("baskin_icecream.db")
     c = conn.cursor()
