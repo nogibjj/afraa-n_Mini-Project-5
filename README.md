@@ -61,7 +61,7 @@ To run the project, you can use the Makefile and follow these commands:
    ```
 ***
 
-#### Successful Formatting, Linting annd Testing
+#### Successful Formatting, Linting and Testing
 
 On running make format, make lint, and make test in actions, it executes succesfully.
 
