@@ -64,3 +64,7 @@ To run the project, you can use the Makefile and follow these commands:
 #### Successful Formatting, Linting annd Testing
 
 On running make format, make lint, and make test in actions, it executes succesfully.
+
+![make lint format](https://github.com/nogibjj/afraa-n_Mini-Project-5/assets/143756865/3d2317bf-4aa3-43a5-9b2b-6944022fd48a)
+![make test](https://github.com/nogibjj/afraa-n_Mini-Project-5/assets/143756865/7c2b932a-a38d-45d4-8bf6-acd0e312df61)
+
