@@ -13,9 +13,9 @@ This project is for a data engineering course (Mini-Project 5). It involves the 
 
 #### ETL-Query Operations
 
-Extract (E): Retrieves a dataset in CSV format from a specified URL.
-Transform (T): Cleans, filters, and enriches the extracted data, preparing it for analysis.
-Load (L): Loads the transformed data into a SQLite Database table using Python's sqlite3 module.
+Extract (E): Retrieves a dataset in CSV format from a specified URL.  
+Transform (T): Cleans, filters, and enriches the extracted data, preparing it for analysis.  
+Load (L): Loads the transformed data into a SQLite Database table using Python's sqlite3 module.  
 Query (Q): Writes and executes SQL queries on the SQLite database to analyze and extract insights from the data.
 
 ****
